@@ -1,0 +1,305 @@
+@font-face {
+    font-family: opensans;
+    src: url(Resources/OpenSans-VariableFont_wdth\,wght.ttf);
+  }
+body{
+    font-family: opensans;
+}
+
+header {
+    border-radius: 10px;
+    border: 2px solid #484848;
+    border-bottom: 5px solid;
+    background-color: #31d7c1;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .primary-link {
+    vertical-align: middle;
+}
+
+header .secondary-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .secondary-links a {
+    transition: color 0.2s;
+    vertical-align: middle;
+    color: #484848;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+   
+}
+header .secondary-links a:hover{
+    color: white;
+}
+
+a {
+    transition: color 0.2s;
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color:#25a393;
+}
+a.mono{
+    transition: color 0.2s;
+    color: white;
+    text-decoration: none;
+}
+a.mono:hover{
+    color:#31d7c1;
+}
+
+button.primary {
+    transition: transform 0.1s, box-shadow 0.1s;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    background-color: #31d7c1;
+    height: 50px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: visible;
+}
+
+button.primary::before,
+button.primary::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #31d7c1;
+    border: 2px solid black;
+    border-bottom: 0px;
+    border-right: 0px;
+    transform: rotate(45deg);
+}
+
+button.primary::before {
+    top: -14px;
+    left: 25px;
+}
+
+button.primary::after {
+    top: -14px;
+    right: 25px;
+}
+
+button.primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px black;
+}
+
+button.primary:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px black;
+    border-bottom-width: 4px;
+}
+button.secondary{
+    transition: transform 0.1s, box-shadow 0.1s;
+    border-radius: 10px;
+    border: 2px solid #484848;
+    border-bottom: 5px solid #484848;
+    background-color: white;
+    margin-left: 10px;
+    height: 50px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #484848;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: visible;
+}
+button.secondary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px #484848;
+}
+button.tertiary{
+    transition: transform 0.1s, box-shadow 0.1s;
+    border-radius: 10px;
+    border: 2px solid white;
+    border-bottom: 5px solid white;
+    background-color: black;
+    height: 50px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+button.tertiary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px white;
+}
+div.maindiv {
+    border-radius: 10px;
+    border: 2px solid #484848;
+    border-bottom: 5px solid #484848;
+    /* font-family: 'Consolas', Tahoma, Geneva, Verdana, sans-serif; */
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    background-color: white;
+    font-size: 17px;
+    color: black;
+}
+div.infodiv {
+    border-radius: 10px;
+    border: 2px solid #484848;
+    border-bottom: 5px solid #484848;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 600px;
+    background-color: white;
+    font-size: 17px;
+    color: black;
+}
+div.tablediv{
+    margin-top: 50px;
+    margin-bottom: 200px;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    gap: 10px;
+}
+div.contents-div {
+    border-radius: 10px;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap: 10px;
+}
+div.docs-sidebar {
+    border-radius: 10px;
+    border: 2px solid #484848;
+    border-bottom: 5px solid #484848;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    overflow-y: auto;
+}
+div.docs-item {
+    transition: max-height 2s;
+    border-radius: 10px;
+    border: 2px solid #484848;
+    border-bottom: 5px solid #484848;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 92%;
+    max-height: 20px;
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    overflow: hidden;
+}
+
+div.docs-item:hover {
+    max-height: 1000px;
+}
+p.more{
+    text-align: center;
+    color:black;
+    font-size: 20px;
+}
+p.white{
+    color:white;
+}
+h2.white{
+    color:white;
+}
+hr { 
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #484848;
+    margin: 1em 0; padding: 0; 
+    width: 100%;
+}
+div.content-div{
+    border-radius: 10px;
+    border: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    padding-bottom:10px;
+    width: 400px;
+    border-bottom: 5px solid white;
+    background-color: black;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.perspective-container {
+    perspective: 1000px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.image {
+    transition: transform 0.75s, box-shadow 2s;
+    border-radius: 10px;
+    border: 3px solid #25a393;
+    transform: rotateY(30deg) rotateX(30deg);
+    transform-origin: center;
+    box-shadow: 
+    -15px 15px 30px rgba(0,0,0,0.5),
+    -30px 30px #31d7c1,
+    0px 0px 250px #ccc;
+}
+
+.perspective-container:hover .image {
+    transform: rotateY(360deg) rotateX(0deg);
+    box-shadow: 
+    0px 10px 15px rgba(0,0,0,0.5),
+    0px 0px #31d7c1;
+    border: 3px solid #25a393;
+}
