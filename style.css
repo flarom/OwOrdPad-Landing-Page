@@ -170,10 +170,15 @@ div.document {
     border: 3px solid #25a393;
 }
 
-p.centered {
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: black;
     font-size: 20px;
+}
+p.centered{
     margin-top: 260px;
 }
 
@@ -187,4 +192,16 @@ div.contents-div {
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
+}
+
+.theme-item {
+    margin-bottom: 15px;
+}
+.color-box {
+    border-radius: 20%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
