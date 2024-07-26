@@ -5,158 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OwOrdPad</title>
-
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Resources/OwOrdPad2.png" type="image/x-icon">
-
-    <meta property="og:title" content="OwOrdPad">
-    <meta property="og:description" content="Winforms rich text editor">
-    <meta property="og:url" content="https://flarom.github.io/OwOrdPad-Landing-Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://flarom.github.io/OwOrdPad-Landing-Page/Resources/biglogo.png">
-    <meta property="og:image:width" content="1310">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="OwOrdPad big logo">
 </head>
 
 <body>
-    <header>
+
+    <div class="header">
         <a href="index.html" class="primary-link">
-            <img src="Resources/OwOrdPad2.png" alt="" height="40" style="vertical-align: middle;">
+            <img src="Resources/OwOrdPad2.png" alt="" height="35" style="vertical-align: middle;">
         </a>
         <div class="secondary-links">
-            <a href=""><img src="Resources/heart.svg" alt=""style="vertical-align: middle;"> Donate</a>
-            <a href="about.html"> About</a>
-            <a href="docs.html" class="secondary-links"> Documentaion</a>
-            <a href="https://github.com/flarom/OwOrdPad/releases" target="_blank" class="secondary-links"> Updates</a>
-            <a href="https://github.com/flarom/OwOrdPad" target="_blank" class="secondary-links"> GitHub</a>
+            <a href="https://github.com/flarom/OwOrdPad/releases" target="_blank" class="secondary-links">Updates</a>
+            <a href="https://github.com/flarom/OwOrdPad" target="_blank" class="secondary-links">GitHub</a>
+            <a href="DC/index.html">Resources</a>
+            <a href="download.html">Download</a>
         </div>
-    </header>
-    <div class="tablediv">
-        <div class="maindiv">
-            <h1>
-                All your notes in a single pwace. >w< </h1>
-                    <p>
-                        OwOrdPad is the purrfect text editor for your perfect documents.
-                    </p>
-                    <div style="display:flex">
-                        <button id="downloadButton" class="primary">
-                            <img src="Resources/download.svg" alt="">
-                            Download *
-                        </button>
-                        <button class="secondary">
-                            <img src="Resources/heart.svg" alt="">
-                            Donate
-                        </button>
-                    </div>
-                    <br>
-                    *for Windows only :(
+    </div>
+
+    <div class="tabledivoverflow">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-title">
+                    Wellcome!
+                </div>
+            </div>
+            <div class="card-content">
+                <h1>All your notes in a single pwace<i>!</i> >w< </h1>
+                        <p>OwOrdPad is the purrfect text editor for your purrfect text documents</p>
+            </div>
+            <div class="card-footer">
+                <a href="download.html" class="card-footer-button">
+                    <button class="card-footer-button" title="Download OwOrdPad"> <img src="Resources/download.svg"
+                            alt=""> </button>
+                </a>
+            </div>
         </div>
         <div class="perspective-container">
-            <img src="Resources/screenshot.png" alt=""  class="image">
+            <img src="Resources/screenshot.png" alt="" class="image">
         </div>
     </div>
-    <br>
-    <p class="more">Scroll to learn more</p>
-    <br>
+
+    <p class="centered">Scroll to learn more</p>
+
     <div class="contents-div">
-        <div class="content-div">
-            <h1>
-                <img src="Resources/speed.svg" alt="" height="45" style="vertical-align: middle;"> Quick
-            </h1>
-            <p>Don't lose your time with slow loadings <br> OwOrdPad boots quickly, loads files quickly, saves files
-                quickly</p>
+
+        <div class="cardbig">
+            <div class="card-header">
+                <div class="card-header-title">
+                    Themes
+                </div>
+            </div>
+            <div class="card-content">
+                <h1>
+                    <img src="Resources/palette.svg" alt="" height="45" style="vertical-align: middle;"> Customizable
+                </h1>
+                <p>OwOrdPad can be customizable as you want</p>
+                <img src="Resources/themes.png" alt="" height="260">
+            </div>
+            <div class="card-footer">
+                <a href="DC/index.html" class="card-footer-button">
+                    <button class="card-footer-button" title="Get more themes"> <img src="Resources/brush.svg" alt="">
+                    </button>
+                </a>
+            </div>
         </div>
 
-        <div class="content-div">
-            <h1>
-                <img src="Resources/compatible.svg" alt="" height="45" style="vertical-align: middle;"> Compatible
-            </h1>
-            <p>OwOrdPad's documents are compatible with:<br>
-                <b>✓</b> Apple TextEdit;<br>
-                <b>✓</b> Corel WordPerfect;<br>
-                <b>✓</b> Google Docs;<br>
-                <b>✓</b> LibreOffice Writer;<br>
-                <b>✓</b> Microsoft Word;<br>
-                <b>✓</b> Microsoft WordPad;<br>
-            </p>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-title">
+                    Source code
+                </div>
+            </div>
+            <div class="card-content">
+                <h1>
+                    <img src="Resources/code.svg" alt="" height="45" style="vertical-align: middle;"> Free & OpenSource
+                </h1>
+                <p>OwOrdPad is, and will never stop being, free.<br>
+                    Our source code is public,
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/flarom/owordpad" target="_blank" class="card-footer-button">
+                    <button class="card-footer-button" title="Check out the code">
+                        <img src="Resources/open.svg" alt="">
+                    </button>
+                </a>
+            </div>
         </div>
 
-        <div class="content-div">
-            <h1>
-                <img src="Resources/palette.svg" alt="" height="45" style="vertical-align: middle;"> Customizable
-            </h1>
-            <p>Work with the font you want with the color pallet you want in the UI you want.</p>
-            <img src="Resources/colors.png" alt="" height="250">
+        <div class="cardbig">
+            <div class="card-header">
+                <div class="card-header-title">
+                    Spell Check
+                </div>
+            </div>
+            <div class="card-content">
+                <h1>
+                    <img src="Resources/spellcheck.svg" alt="" height="45" style="vertical-align: middle;"> Helpfull
+                </h1>
+                <p>OwOrdPad's spell checker helps you typing those hard words</p>
+                <img src="Resources/spellcheck.png" alt="">
+            </div>
+            <div class="card-footer">
+                <a href="" class="card-footer-button">
+                    <button class="card-footer-button" title="Get more dictionaries"> <img src="Resources/box.svg"
+                            alt="">
+                    </button>
+                </a>
+            </div>
         </div>
 
-        <div class="content-div">
-            <h1>
-                <img src="Resources/pencil.svg" alt="" height="45" style="vertical-align: middle;"> Without AIs
-            </h1>
-            <p>You, and only you, in control.</p>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-title">
+                    Compatibility
+                </div>
+            </div>
+            <div class="card-content">
+                <h1>
+                    <img src="Resources/compatible.svg" alt="" height="45" style="vertical-align: middle;"> Compatible
+                </h1>
+                <p>OwOrdPad's rich text documents are compatible with:<br>
+                    <b>✓</b> Apple TextEdit;<br>
+                    <b>✓</b> Corel WordPerfect;<br>
+                    <b>✓</b> Google Docs;<br>
+                    <b>✓</b> LibreOffice Writer;<br>
+                    <b>✓</b> Microsoft Word;<br>
+                    <b>✓</b> Microsoft WordPad;<br>
+                </p>
+            </div>
         </div>
 
-        <div class="content-div">
-            <h1>
-                <img src="Resources/lock.svg" alt="" height="45" style="vertical-align: middle;"> Safe
-            </h1>
-            <p>Everything is saved locally.<br>
-                We have no idea what you write, nor who you are</p>
+
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-title">
+                    AI features
+                </div>
+            </div>
+            <div class="card-content">
+                <h1>
+                    <img src="Resources/pencil.svg" alt="" height="45" style="vertical-align: middle;"> Without AIs
+                </h1>
+                <p>It's just a text editor, there's no need to AI. <br>We believe in your intelligence!</p>
+            </div>
         </div>
 
-        <div class="content-div">
-            <h1>
-                <img src="Resources/code.svg" alt="" height="45" style="vertical-align: middle;"> Free & OpenSource
-            </h1>
-            <p>OwOrdPad is, and will never stop being, free.<br>
-                Our source code is public, 
-            </p>
-            <a href="https://github.com/flarom/owordpad" target="_blank" class="mono">
-                <button class="tertiary">
-                    Check out the code!
-                </button>
-            </a>
-        </div>
-        <hr>
-        <div>
-            <h2 class="white">
-                That's OwOrdPad<br>
-            </h2>
-            <a href="" class="mono">♥ Donate</a> <br>
-            <a href="index.html" class="mono">Download</a> <br>
-            <a href="about.html" class="mono">About OwOrdPad</a> <br>
-            <a href="docs.html" class="mono">Documentaion</a> <br>
-            <a href="https://github.com/flarom/OwOrdPad/releases" class="mono" target="_blank">Updates</a> <br>
-            <a href="https://github.com/flarom/OwOrdPad" class="mono" target="_blank">GitHub</a> <br>
-            <p class="white">
-                Copyright © 2024 OwOrdPad <br>
-                Note: OwOrdPad is not affiliated with Microsoft Corporation. Microsoft WordPad is a registered trademark
-                of Microsoft Corporation.</p>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-title">
+                    Security
+                </div>
+            </div>
+            <div class="card-content">
+                <h1>
+                    <img src="Resources/lock.svg" alt="" height="45" style="vertical-align: middle;"> Safe
+                </h1>
+                <p>Everything is saved locally.<br>
+                    We have no idea what you write, nor who you are</p>
+            </div>
         </div>
     </div>
 
-    <script>
-        document.getElementById("downloadButton").addEventListener("click", function () {
-            // download latest github release
-            var latestReleaseUrl = "https://api.github.com/repos/flarom/owordpad/releases/latest";
-            fetch(latestReleaseUrl)
-                .then(response => response.json())
-                .then(data => {
-                    var assetUrl = data.assets[0].browser_download_url;
-                    var downloadLink = document.createElement("a");
-                    downloadLink.href = assetUrl;
-                    downloadLink.download = "owordpad_latest_release.zip";
-                    document.body.appendChild(downloadLink);
-                    downloadLink.click();
-                    document.body.removeChild(downloadLink);
-                })
-                .catch(error => {
-                    console.error("Failed to get latest release:", error);
-                    alert("Failed to get latest release, try again latter.");
-                });
-        });
-    </script>
+    <footer>
+        <h2>The Open WordPad Project</h2>
+        Copyright 2024 OwOrdPad<br>
+        <a href="Docs/docs.privacy.html">Privacy</a> &emsp;
+        <a href="Docs/docs.license.html">License</a> &emsp;
+        <a href="https://github.com/flarom/OwOrdPad" target="_blank" class="secondary-links">GitHub Repo</a> &emsp;
+        <a href="download.html">Download</a> &emsp;
+        <a href="DC/index.html">Resources</a>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - OwOrdPad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="primary-link">
+            <img src="Resources/OwOrdPad2.png" alt="" height="35" style="vertical-align: middle;">
+        </a>
+        <div class="secondary-links">
+            <a href="https://github.com/flarom/OwOrdPad/releases" target="_blank" class="secondary-links">Updates</a>
+            <a href="https://github.com/flarom/OwOrdPad" target="_blank" class="secondary-links">GitHub</a>
+            <a href="DC/index.html">Resources</a>
+            <a href="download.html">Download</a>
+        </div>
+    </div>
+
+    <div class="card" style="margin-left: 50px;">
+        <div class="card-header">
+            <div class="card-header-title">
+                Download
+            </div>
+        </div>
+        <div class="card-content">
+            <h1>Get OwOrdPad now</h1>
+            <p>Available for Windows 7 (32 bits) or above</p>
+        </div>
+        <div class="card-footer">
+            <button class="card-footer-button" title="Download OwOrdPad" id="downloadButton">
+                <img src="Resources/download.svg" alt=""> 
+            </button>
+        </div>
+    </div>
+
+    <div class="card" style="margin-left: 50px;">
+        <div class="card-header">
+            <div class="card-header-title">
+                Install
+            </div>
+        </div>
+        <div class="card-content">
+            <p>
+                <b>1.</b> Download the program in the card above <br>                                                
+                <b>2.</b> Unzip the downloaded folder <br>
+                <b>3.</b> Navigate to '\bin\debug\net8.0-windows\' <br>
+                <b>4.</b> Launch the 'owordpad.exe' application
+            </p>
+        </div>
+        <!-- <div class="card-footer">
+            <button class="card-footer-button" title="Download OwOrdPad" id="downloadButton">
+                <img src="Resources/download.svg" alt=""> 
+            </button>
+        </div> -->
+    </div>
+    <br><br>
+    <footer>
+        <h2>The Open WordPad Project</h2>
+        Copyright 2024 OwOrdPad<br>
+        <a href="Docs/docs.privacy.html">Privacy</a> &emsp;
+        <a href="Docs/docs.license.html">License</a> &emsp;
+        <a href="https://github.com/flarom/OwOrdPad" target="_blank" class="secondary-links">GitHub Repo</a> &emsp;
+        <a href="download.html">Download</a> &emsp;
+        <a href="DC/index.html">Resources</a>
+    </footer>
+
+    <script>
+        document.getElementById("downloadButton").addEventListener("click", function () {
+            // download latest github release
+            var latestReleaseUrl = "https://api.github.com/repos/flarom/owordpad/releases/latest";
+            fetch(latestReleaseUrl)
+                .then(response => response.json())
+                .then(data => {
+                    var assetUrl = data.assets[0].browser_download_url;
+                    var downloadLink = document.createElement("a");
+                    downloadLink.href = assetUrl;
+                    downloadLink.download = "owordpad_latest_release.zip";
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();
+                    document.body.removeChild(downloadLink);
+                })
+                .catch(error => {
+                    console.error("Failed to get latest release:", error);
+                    alert("Failed to get latest release, try again latter.");
+                });
+        });
+    </script>
+</body>
+
+</html>
